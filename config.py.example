@@ -1,0 +1,34 @@
+# Bot Configuration Template
+# Copy this file to config.py and fill in your values
+
+# Telegram Bot Token (get from @BotFather)
+BOT_TOKEN = "YOUR_BOT_TOKEN_HERE"
+
+# Bot name displayed in messages
+BOT_NAME = "Hotmail Inboxer"
+
+# Admin Telegram user IDs (add your ID here)
+ADMIN_IDS = {7265489223}  # Replace with your Telegram user ID
+
+# Checker Settings
+MAX_LINES = 6000  # Maximum lines per check for non-admin users
+DEFAULT_THREADS = 50  # Default number of threads for checking
+MAX_THREADS = 100  # Maximum allowed threads
+
+# File Settings
+MAX_FILE_SIZE = 10 * 1024 * 1024  # 10MB maximum file size
+
+# Retry Settings
+MAX_RETRIES = 3  # Maximum number of retry attempts
+RETRY_DELAY = 2  # Delay between retries in seconds
+
+# Timeout Settings
+REQUEST_TIMEOUT = 30  # HTTP request timeout in seconds
+
+# Maintenance mode (set to True to disable bot for non-admins)
+MAINTENANCE_MODE = False
+
+# Logging settings
+LOG_LEVEL = "INFO"  # DEBUG, INFO, WARNING, ERROR
+LOG_TO_FILE = True  # Save logs to file
+LOG_FILE = "logs/bot.log"  # Log file path
